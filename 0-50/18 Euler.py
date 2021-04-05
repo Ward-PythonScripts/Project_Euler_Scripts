@@ -28,31 +28,31 @@
 # 04 62 98 27 23 09 70 98 73 93 38 53 60 04 23
 #
 # NOTE: As there are only 16384 routes, it is possible to solve this problem by trying every route. However, Problem 67, is the same challenge with a triangle containing one-hundred rows; it cannot be solved by brute force, and requires a clever method! ;o)
-def getGrid():
-    fileName = "18 Euler.txt"
-    grid = []
-    f = open(fileName, "r")
-    for l in f:
-        row = []
-        numb = ""
-        for x in l:
-            #print(x)
-
-            if x == " " or x =="\n":
-                row.append(int(numb))
-                numb = ""
-            else:
-                numb += str(x)
-                #print(numb)
-        if not numb == "":
-            row.append(int(numb))
-            numb = ""
-        grid.append(row)
-        #print(row)
-    return grid
-
-def maxPath(grid):
-    for row in grid:
-
-
-print(maxPath(getGrid()))
+# def getGrid():
+#     fileName = "18 Euler.txt"
+#     grid = []
+#     f = open(fileName, "r")
+#     for l in f:
+#         row = []
+#         numb = ""
+#         for x in l:
+#             #print(x)
+#
+#             if x == " " or x =="\n":
+#                 row.append(int(numb))
+#                 numb = ""
+#             else:
+#                 numb += str(x)
+#                 #print(numb)
+#         if not numb == "":
+#             row.append(int(numb))
+#             numb = ""
+#         grid.append(row)
+#         #print(row)
+#     return grid
+#
+# def maxPath(grid):
+#     for row in grid:
+#
+#
+# print(maxPath(getGrid()))
