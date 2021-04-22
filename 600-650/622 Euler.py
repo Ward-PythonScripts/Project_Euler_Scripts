@@ -24,6 +24,11 @@ def genSimpleDeck():
             allDecks.append(x + str(deck[i]))
     return allDecks
 
+def genDeckeroonie():
+    deck = []
+    for x in range(52):
+        deck.append(str(x))
+    return deck
 def shuffle(lst):
     a = lst[0:m.ceil(len(lst)/2)]
     b = lst[m.ceil(len(lst)/2):len(lst)]
@@ -37,8 +42,8 @@ def shuffle(lst):
 
 
 #main
-time1 = time.time()
-deck = genDeck()
+
+deck = genDeckeroonie()
 print(deck)
 originalDeck = deck.copy()
 counter = 1
@@ -49,6 +54,6 @@ while deck != originalDeck and counter < 100:
     print(deck)
     counter += 1
 print(counter)
-print("The whole process too us " + str(time.time() - time1) + " s")
+
 
 
